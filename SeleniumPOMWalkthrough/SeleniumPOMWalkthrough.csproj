@@ -106,8 +106,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\AP_CheckoutSteps.cs" />
+    <Compile Include="BDD\AP_ItemPageSteps.cs" />
     <Compile Include="BDD\AP_SigninSteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
+    <Compile Include="lib\pages\AP_CheckoutPage.cs" />
     <Compile Include="lib\pages\AP_HomePage.cs" />
     <Compile Include="lib\pages\AP_ItemPage.cs" />
     <Compile Include="lib\pages\AP_UserPage.cs" />
@@ -117,9 +120,12 @@
     <Compile Include="tests\AP_Signin_Tests.cs" />
     <Compile Include="tests\AP_UserPortal_Tests.cs" />
     <Compile Include="utils\Credentials.cs" />
+    <Compile Include="utils\PersonalDetails.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="BDD\AP_CheckoutPage.feature" />
+    <None Include="BDD\AP_ItemPage.feature" />
     <None Include="BDD\AP_Signin.feature" />
     <None Include="packages.config" />
   </ItemGroup>

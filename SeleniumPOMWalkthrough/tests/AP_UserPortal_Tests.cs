@@ -24,7 +24,6 @@ namespace SeleniumPOMWalkthrough.tests
             var result = AP_Website.AP_UserPage.GetHeaderText();
             Assert.That(result, Does.Contain("YOUR CART"));
         }
-        [OneTimeTearDown]
         public void CleanUp()
         {
             // Quit the drivers and closes every associated window

@@ -20,22 +20,22 @@ namespace SeleniumPOMWalkthrough.BDD
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("AP_Signin")]
-    public partial class AP_SigninFeature
+    [NUnit.Framework.DescriptionAttribute("AP_Checkout")]
+    public partial class AP_CheckoutFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "AP_Signin.feature"
+#line 1 "AP_Checkout.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "AP_Signin", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "AP_Checkout", "\tAs a User \r\n\tI want to checkout items\r\n\tSo that I can complete a transaction", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,15 +74,17 @@ namespace SeleniumPOMWalkthrough.BDD
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Valid Credentials")]
-        [NUnit.Framework.CategoryAttribute("Login")]
-        public virtual void ValidCredentials()
+        [NUnit.Framework.DescriptionAttribute("User adds all items to cart")]
+        [NUnit.Framework.CategoryAttribute("UserAddsAllItemsToCart")]
+        [NUnit.Framework.CategoryAttribute("HappyPath")]
+        public virtual void UserAddsAllItemsToCart()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "UserAddsAllItemsToCart",
+                    "HappyPath"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid Credentials", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User adds all items to cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -102,96 +104,84 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
- testRunner.Given("I am on signin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 8
+ testRunner.Given("I have logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Email",
-                            "Password"});
-                table7.AddRow(new string[] {
-                            "standard_user",
-                            "secret_sauce"});
-#line 7
- testRunner.And("I have the following Credentials", ((string)(null)), table7, "And ");
+#line 9
+ testRunner.And("I am on the public inventory page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
- testRunner.When("I enter the credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I add all items to the cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.And("I click the sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 12
- testRunner.Then("I should be on the next page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Cart inventory should be 6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Invalid Password")]
-        [NUnit.Framework.CategoryAttribute("Login")]
-        public virtual void InvalidPassword()
+        [NUnit.Framework.DescriptionAttribute("User goes to the checkout page")]
+        [NUnit.Framework.CategoryAttribute("UserGoesToCheckout")]
+        [NUnit.Framework.CategoryAttribute("HappyPath")]
+        public virtual void UserGoesToTheCheckoutPage()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "UserGoesToCheckout",
+                    "HappyPath"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User goes to the checkout page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 14
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 15
-this.ScenarioInitialize(scenarioInfo);
+ testRunner.Given("I have logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
 #line 16
- testRunner.Given("I am on signin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.And("I am on the public inventory page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Email",
-                            "Password"});
-                table8.AddRow(new string[] {
-                            "standard_user",
-                            "wrong"});
 #line 17
- testRunner.And("I have the following Credentials", ((string)(null)), table8, "And ");
+ testRunner.And("I have added all items to the cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 20
- testRunner.When("I enter the credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
+ testRunner.When("I go to cart all items should be in cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 21
- testRunner.And("I click the sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 22
- testRunner.Then("I should be given a message saying \"Epic sadface: Username and password do not ma" +
-                        "tch any user in this service\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 19
+ testRunner.Then("I can checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("No Username")]
-        [NUnit.Framework.CategoryAttribute("Login")]
-        public virtual void NoUsername()
+        [NUnit.Framework.DescriptionAttribute("User enters personal details")]
+        [NUnit.Framework.CategoryAttribute("UserAddsDetails")]
+        [NUnit.Framework.CategoryAttribute("HappyPath")]
+        public virtual void UserEntersPersonalDetails()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "UserAddsDetails",
+                    "HappyPath"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("No Username", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 25
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User enters personal details", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 22
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -211,41 +201,48 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 26
- testRunner.Given("I am on signin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 23
+ testRunner.Given("I have logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Email",
-                            "Password"});
-                table9.AddRow(new string[] {
-                            "",
-                            "secret_sauce"});
+#line 24
+ testRunner.And("I am on the public inventory page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 25
+ testRunner.And("I have added all items to the cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 26
+ testRunner.And("I am on the checkout page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "firstname",
+                            "lastname",
+                            "postcode"});
+                table1.AddRow(new string[] {
+                            "me",
+                            "me",
+                            "SG8"});
 #line 27
- testRunner.And("I have the following Credentials", ((string)(null)), table9, "And ");
+ testRunner.When("I enter my personal details", ((string)(null)), table1, "When ");
 #line hidden
 #line 30
- testRunner.When("I enter the credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 31
- testRunner.And("I click the sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 32
- testRunner.Then("I should be given a message saying \"Epic sadface: Username is required\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I can continue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("No fields")]
-        [NUnit.Framework.CategoryAttribute("Login")]
-        public virtual void NoFields()
+        [NUnit.Framework.DescriptionAttribute("User views total order")]
+        [NUnit.Framework.CategoryAttribute("UserViewsOrderDetails")]
+        [NUnit.Framework.CategoryAttribute("HappyPath")]
+        public virtual void UserViewsTotalOrder()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "UserViewsOrderDetails",
+                    "HappyPath"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("No fields", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 35
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User views total order", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 33
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -265,40 +262,50 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 34
+ testRunner.Given("I have logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 35
+ testRunner.And("I am on the public inventory page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 36
- testRunner.Given("I am on signin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.And("I have added all items to the cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Email",
-                            "Password"});
-                table10.AddRow(new string[] {
-                            "",
-                            ""});
 #line 37
- testRunner.And("I have the following Credentials", ((string)(null)), table10, "And ");
+ testRunner.And("I am on the checkout page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 40
- testRunner.When("I enter the credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "firstname",
+                            "lastname",
+                            "postcode"});
+                table2.AddRow(new string[] {
+                            "me",
+                            "me",
+                            "SG8"});
+#line 38
+ testRunner.When("I enter my personal details", ((string)(null)), table2, "When ");
 #line hidden
 #line 41
- testRunner.And("I click the sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("press continue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 42
- testRunner.Then("I should be given a message saying \"Epic sadface: Username is required\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should be taken to the order page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("No Password")]
-        [NUnit.Framework.CategoryAttribute("Login")]
-        public virtual void NoPassword()
+        [NUnit.Framework.DescriptionAttribute("User completes order")]
+        [NUnit.Framework.CategoryAttribute("UserViewsOrderDetails")]
+        [NUnit.Framework.CategoryAttribute("HappyPath")]
+        public virtual void UserCompletesOrder()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "UserViewsOrderDetails",
+                    "HappyPath"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("No Password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User completes order", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 45
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -320,25 +327,36 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 46
- testRunner.Given("I am on signin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Email",
-                            "Password"});
-                table11.AddRow(new string[] {
-                            "standard_user",
-                            ""});
 #line 47
- testRunner.And("I have the following Credentials", ((string)(null)), table11, "And ");
+ testRunner.And("I am on the public inventory page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+#line 48
+ testRunner.And("I have added all items to the cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 49
+ testRunner.And("I am on the checkout page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                            "firstname",
+                            "lastname",
+                            "postcode"});
+                table3.AddRow(new string[] {
+                            "me",
+                            "me",
+                            "SG8"});
 #line 50
- testRunner.When("I enter the credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I enter my personal details", ((string)(null)), table3, "When ");
 #line hidden
-#line 51
- testRunner.And("I click the sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 53
+ testRunner.And("press continue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 52
- testRunner.Then("I should be given a message saying \"Epic sadface: Password is required\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 54
+ testRunner.And("I press finish", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 55
+ testRunner.Then("I have checked out", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

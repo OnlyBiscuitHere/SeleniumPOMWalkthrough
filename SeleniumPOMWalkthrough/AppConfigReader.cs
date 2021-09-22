@@ -13,5 +13,6 @@ namespace SeleniumPOMWalkthrough
         public static readonly string BaseURL = ConfigurationManager.AppSettings["base_url"];
         public static readonly string UserPageURL = ConfigurationManager.AppSettings["userpage_url"];
         public static readonly string ItemPageURL = ConfigurationManager.AppSettings["item_url"];
+        public static readonly string CartPageURL = ConfigurationManager.AppSettings["cart_url"];
     }
 }
