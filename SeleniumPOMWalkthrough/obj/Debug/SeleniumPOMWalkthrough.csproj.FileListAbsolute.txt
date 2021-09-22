@@ -40,3 +40,5 @@ C:\Users\h8bmf\source\repos\SeleniumPOMWalkthrough\SeleniumPOMWalkthrough\bin\De
 C:\Users\h8bmf\source\repos\SeleniumPOMWalkthrough\SeleniumPOMWalkthrough\bin\Debug\TechTalk.SpecFlow.pdb
 C:\Users\h8bmf\source\repos\SeleniumPOMWalkthrough\SeleniumPOMWalkthrough\bin\Debug\TechTalk.SpecFlow.xml
 C:\Users\h8bmf\source\repos\SeleniumPOMWalkthrough\SeleniumPOMWalkthrough\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb
+C:\Users\h8bmf\source\repos\SeleniumPOMWalkthrough\SeleniumPOMWalkthrough\bin\Debug\LivingDoc.Dtos.dll
+C:\Users\h8bmf\source\repos\SeleniumPOMWalkthrough\SeleniumPOMWalkthrough\bin\Debug\LivingDoc.SpecFlowPlugin.dll
