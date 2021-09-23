@@ -1,4 +1,4 @@
-<h1> Selenium Mini Project
+<h1> Selenium Mini Project </h1>
 In the repository is the implementation of the Selenium, NUnit and Specflow to perform Web testing on this website: https://www.saucedemo.com/
 In Visual Studio the versions for each package is listed below
 
@@ -36,3 +36,8 @@ My correction for that was implementing a super class that would be able to perf
 
 One of the things I noticed doing these tests is that the Specflow tests take significantly more time than the pure Selenium tests (which might be due to poor programming on my behalf).
 The tests take long because they are being ran in series so using the NUnit 3 packages, I implemented the parallelisable attribute and set it to the fixtures so that each test fixture has one thing running.
+
+Class Diagram:
+![Class Diagram](https://github.com/OnlyBiscuitHere/SeleniumPOMWalkthrough/blob/main/img/Screenshot_1.png)
+Link to the LivindDoc file:
+[LivingDoc Tests](https://github.com/OnlyBiscuitHere/SeleniumPOMWalkthrough/blob/main/SeleniumPOMWalkthrough/bin/Debug/LivingDoc.html)
