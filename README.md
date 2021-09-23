@@ -1,4 +1,4 @@
-#H1 Selenium Mini Project
+<h1> Selenium Mini Project
 In the repository is the implementation of the Selenium, NUnit and Specflow to perform Web testing on this website: https://www.saucedemo.com/
 In Visual Studio the versions for each package is listed below
 
