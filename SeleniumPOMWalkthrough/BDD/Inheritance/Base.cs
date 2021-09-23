@@ -12,7 +12,7 @@ using TechTalk.SpecFlow.Assist;
 
 namespace SeleniumPOMWalkthrough.BDD
 {
-    public class Base
+    public class BaseSteps
     {
         public AP_Website<ChromeDriver> AP_Website = new AP_Website<ChromeDriver>();
         private Credentials _credentials;

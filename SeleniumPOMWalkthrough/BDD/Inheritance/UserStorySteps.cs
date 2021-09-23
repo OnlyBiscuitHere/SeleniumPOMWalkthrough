@@ -8,7 +8,7 @@ namespace SeleniumPOMWalkthrough.BDD.Inheritance
 {
     [Binding]
     [Scope(Tag = "Checkout")]
-    public class UserStorySteps : Base
+    public class UserStorySteps : BaseSteps
     {
         private PersonalDetails _personalDetails;
         [When(@"I add all items to the basket")]

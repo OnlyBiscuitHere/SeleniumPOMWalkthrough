@@ -131,6 +131,7 @@
     <None Include="BDD\AP_CheckoutPage.feature" />
     <None Include="BDD\AP_ItemPage.feature" />
     <None Include="BDD\AP_Signin.feature" />
+    <None Include="BDD\Inheritance\ClassDiagram1.cd" />
     <None Include="BDD\Inheritance\Derived.feature" />
     <None Include="BDD\Inheritance\ItemPage.feature" />
     <None Include="BDD\Inheritance\UserStory.feature" />

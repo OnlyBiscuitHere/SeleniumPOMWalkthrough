@@ -10,7 +10,7 @@ namespace SeleniumPOMWalkthrough.BDD
 {
     [Binding]
     [Scope(Tag ="Base")]
-    public class DerivedSteps : Base
+    public class SigninSteps : BaseSteps
     {
         [Given(@"I want to sign in")]
         public override void GivenIWantToSignIn()

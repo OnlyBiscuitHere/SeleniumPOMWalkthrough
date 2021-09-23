@@ -6,7 +6,7 @@ namespace SeleniumPOMWalkthrough.BDD.Inheritance
 {
     [Binding]
     [Scope(Tag ="Item")]
-    public class ItemPageSteps : Base
+    public class ItemPageSteps : BaseSteps
     {
         [When(@"I click on the first item")]
         public void WhenIClickOnTheFirstItem()
