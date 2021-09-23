@@ -7,7 +7,7 @@ In Visual Studio the versions for each package is listed below
 |BoDi|1.5.0|
 |Cucumber.Messages|6.0.1|
 |Gherkin|19.0.3|
-|Google.Protobuf|3.7.0"|
+|Google.Protobuf|3.7.0|
 |NUnit|3.13.1|
 |NUnit3TestAdapter|4.0.0|
 |Selenium.WebDriver|3.141.0|
