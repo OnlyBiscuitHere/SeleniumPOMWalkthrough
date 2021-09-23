@@ -5,6 +5,7 @@ using TechTalk.SpecFlow;
 namespace SeleniumPOMWalkthrough.BDD.Inheritance
 {
     [Binding]
+    [Scope(Tag ="Item")]
     public class ItemPageSteps : Base
     {
         [When(@"I click on the first item")]

@@ -16,7 +16,6 @@ namespace SeleniumPOMWalkthrough.BDD
     {
         public AP_Website<ChromeDriver> AP_Website = new AP_Website<ChromeDriver>();
         private Credentials _credentials;
-
         [Given(@"I want to sign in")]
         public virtual void GivenIWantToSignIn() 
         {

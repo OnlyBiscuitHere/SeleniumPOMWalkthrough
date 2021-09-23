@@ -4,13 +4,14 @@ using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
+[assembly: Parallelizable(ParallelScope.Fixtures)]
+[assembly: LevelOfParallelism(8)]
 namespace SeleniumPOMWalkthrough.BDD
 {
     [Binding]
     [Scope(Tag ="Base")]
     public class DerivedSteps : Base
     {
-        private Credentials _credentials;
         [Given(@"I want to sign in")]
         public override void GivenIWantToSignIn()
         {
@@ -38,7 +39,6 @@ namespace SeleniumPOMWalkthrough.BDD
         public void DisposeWebDriver()
         {
             AP_Website.SeleniumDriver.Quit();
-            AP_Website.SeleniumDriver.Dispose();
         }
     }
 }

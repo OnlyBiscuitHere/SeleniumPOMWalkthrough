@@ -112,6 +112,7 @@
     <Compile Include="BDD\Inheritance\Base.cs" />
     <Compile Include="BDD\Inheritance\DerivedSteps.cs" />
     <Compile Include="BDD\Inheritance\ItemPageSteps.cs" />
+    <Compile Include="BDD\Inheritance\UserStorySteps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AP_CheckoutPage.cs" />
     <Compile Include="lib\pages\AP_HomePage.cs" />
@@ -132,6 +133,7 @@
     <None Include="BDD\AP_Signin.feature" />
     <None Include="BDD\Inheritance\Derived.feature" />
     <None Include="BDD\Inheritance\ItemPage.feature" />
+    <None Include="BDD\Inheritance\UserStory.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

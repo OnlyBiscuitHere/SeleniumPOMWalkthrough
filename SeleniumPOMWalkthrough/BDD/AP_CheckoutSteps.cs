@@ -116,7 +116,6 @@ namespace SeleniumPOMWalkthrough.BDD
         public void DisposeWebDriver()
         {
             AP_Website.SeleniumDriver.Quit();
-            AP_Website.SeleniumDriver.Dispose();
         }
     }
 }
